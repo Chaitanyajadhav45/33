@@ -10,18 +10,26 @@
 
 
     <script>
-        const students =["Sanket","Swanand","Vishal","Sarita","Rutuja"]
+        const students =["sunny","Sonu","Vishu","Sartaj","Rutu"]
         console.log(students);
         console.log(students.length);
-        students.push("Abhishek");
+        students.push("Abhi");
         console.log(students);
         students.pop();
         console.log(students);
-        students.unshift("Abhishek");
+        students.unshift("Abhi");
         console.log(students);
         students.shift();
         console.log(students);
-      
+        console.log(students.indexOf("Vishu"));
+        console.log(students.indexOf("Abhi"));
+        console.log(students.includes("Sanket"));
+        console.log(students.includes("Abhi"));
+        students.splice(1,2);
+        console.log(students);
+        students.splice(1,0,"Nik","Ved","Chaitanya");
+        console.log(students);
+    
        </script>
 </body>
 </html>
